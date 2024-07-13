@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Devjobs</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-pattern"><img src="./assets/desktop/bg-pattern-header.svg"></div>
+        <div class="header-color"></div>
+
+        <div class="header-component flex">
+            <h1><img src="./assets/desktop/logo.svg" alt="logo"></h1>
+            <div class="toggle flex">
+                <img src="./assets/desktop/icon-sun.svg" alt="sun">
+                <div class="switch-toggle" id="switch">
+                    <div class="toggleCircle" id="toggleCircle"></div>
+                </div>
+                <img src="./assets/desktop/icon-moon.svg" alt="moon">
+            </div>
+        </div>
+        <div class="search-component">
+            <div class="search-box box flex">
+                <img src="./assets/desktop/icon-search.svg" alt="icon-search">
+                <input type="search" placeholder="Filter by title, companies, expertise…" name="search" id="search-input">
+            </div>
+            <hr>
+            <div class="filter-box box flex">
+                <img src="./assets/desktop/icon-location.svg" alt="icon-location">
+                <input type="search" name="location-search" id="location-input" placeholder="Filter by location…">
+            </div>
+            <hr>
+            <div class="full-time-box flex box">
+                <input type="checkbox" name="full-time" id="full-time">
+                <label for="full-time">Full Time <span>Only</span></label>
+                <button class="btn" id="search-btn">Search</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="item-container" id="item-container">
+        </div>
+        <div class="btn load-btn">Load More</div>
+    </main>
+    <script src="js/item.js"></script>
+    <script src="js/dark-light-mode.js"></script>
+</body>
+
+</html>
